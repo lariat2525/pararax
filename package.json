@@ -1,0 +1,19 @@
+{
+  "name": "pararax",
+  "version": "1.0.0",
+  "description": "start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lariat2525/pararax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lariat2525/pararax/issues"
+  },
+  "homepage": "https://github.com/lariat2525/pararax#readme"
+}
