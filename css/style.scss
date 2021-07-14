@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import 'mixin';
+
 $fBebas: 'Bebas Neue', cursive;
 $fTeko: 'Teko', sans-serif;
 
@@ -97,7 +99,7 @@ nav {
 
       > a {
         font-family: $fTeko;
-        font-size:1.9rem;
+        font-size:2.6rem;
         color: #fff;
         font-weight: bold;
         transition: all 0.3s ease;
@@ -193,30 +195,62 @@ nav {
         justify-content: center;
         .card{
           width:24%;
+          max-width:200px;
           height:280px;
           // background-color: rgb(92, 114, 122);
-          background-color:rgba(255, 255, 255, 0.767);
+          background-color:rgba(255, 255, 255, 0.904);
           margin:20px 40px;
           border-radius:4.5%;
           color: black;
           font-weight:500;
           font-family: $fTeko;
-          filter: drop-shadow(1px 1px 6px #999999);
-          .card-donuts{
+          filter: drop-shadow(1px 1px 6px #c4c2c2);
+          position: relative;
+          overflow: hidden;
 
+          &::before{
+            content:"";
+            background-color:aqua;
+            position: absolute;
+            width:100%;
+            height:100%;
+            left:0;
+            top:40px;
+            z-index:1;
+            animation:wave 4s infinite;
+          }
+          .card-donuts{
+            
             .card-donuts-info{
-              padding:30px;
+              background-color: white;
+              width:92%;
+              height:170px;
+              border-radius:50%;
+              margin: 0 auto;
+              position: relative;
+              z-index:3;
               img{
-                width:85px;
+                display:block;
+                width:75px;
+                position: absolute;
+                left:30%;
+                top:25%;
               }
             }
           }
-          .card-title{
-            border-top:solid 0.8px black;
-            margin-top:30px;
-            padding-top:13px;
-            font-size: 2.2rem;
-            text-shadow: 0.5px 0.5px 1px #121212;
+          .card-art{
+            position: relative;
+            .card-title{
+              border-top:solid 0.8px black;
+              margin-top:30px;
+              padding-top:13px;
+              font-size: 2.2rem;
+              text-shadow: 0.5px 0.5px 1px #121212;
+              position:absolute;
+              width:100%;
+              height:100%;
+              z-index:2;
+            }
           }
         }
     }
@@ -248,7 +282,7 @@ nav {
   font-size: 0.8rem;
 }}
 // SP
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 857px) {
   .site-title {
     top: 42%;
     font-size:4rem;
@@ -262,7 +296,7 @@ nav {
     margin-bottom :25px;
   }
   .fixed-bg {
-    height: 94px;
+    height: 150px;
     /* スマホ時は背景をスクロールするように変更 */
     background-attachment: scroll;
   }
@@ -273,7 +307,7 @@ nav {
 @media screen and (max-width:857px){
 
   #profile{ 
-    margin-top:0;
+    margin-top:30px;
     // position: relative;
     .pf-content {
     flex-direction: column;
