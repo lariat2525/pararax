@@ -3,44 +3,52 @@
   0%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   75% {
-    -webkit-transform: translate(0px, 10px);
-            transform: translate(0px, 10px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translate(0px, 7px);
+            transform: translate(0px, 7px);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 @keyframes wave {
   0%, 100% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   25% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   50% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   75% {
-    -webkit-transform: translate(0px, 10px);
-            transform: translate(0px, 10px);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translate(0px, 7px);
+            transform: translate(0px, 7px);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -278,14 +286,13 @@ nav > ul > li > a:hover {
   overflow: hidden;
 }
 
-#skill .sk-content .cards .card::before {
-  content: "";
-  background-color: aqua;
+#skill .sk-content .cards .card .card-wave-1, #skill .sk-content .cards .card .card-wave-2, #skill .sk-content .cards .card .card-wave-3, #skill .sk-content .cards .card .card-wave-4, #skill .sk-content .cards .card .card-wave-5, #skill .sk-content .cards .card .card-wave-6, #skill .sk-content .cards .card .card-wave-7, #skill .sk-content .cards .card .card-wave-8 {
+  display: block;
+  background-color: rgba(0, 195, 255, 0.521);
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
-  top: 40px;
   z-index: 1;
   -webkit-animation: wave 4s infinite;
           animation: wave 4s infinite;
@@ -293,8 +300,8 @@ nav > ul > li > a:hover {
 
 #skill .sk-content .cards .card .card-donuts .card-donuts-info {
   background-color: white;
-  width: 92%;
-  height: 170px;
+  width: 67%;
+  height: 130px;
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
@@ -305,7 +312,7 @@ nav > ul > li > a:hover {
   display: block;
   width: 75px;
   position: absolute;
-  left: 30%;
+  left: 22%;
   top: 25%;
 }
 
@@ -315,7 +322,7 @@ nav > ul > li > a:hover {
 
 #skill .sk-content .cards .card .card-art .card-title {
   border-top: solid 0.8px black;
-  margin-top: 30px;
+  margin-top: 50px;
   padding-top: 13px;
   font-size: 2.2rem;
   text-shadow: 0.5px 0.5px 1px #121212;
