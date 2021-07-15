@@ -9,8 +9,8 @@
   25% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
   }
   50% {
     -webkit-transform: translate(0px, 5px);
@@ -21,8 +21,8 @@
   75% {
     -webkit-transform: translate(0px, 7px);
             transform: translate(0px, 7px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 @keyframes wave {
@@ -35,8 +35,8 @@
   25% {
     -webkit-transform: translate(0px, 5px);
             transform: translate(0px, 5px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
   }
   50% {
     -webkit-transform: translate(0px, 5px);
@@ -47,8 +47,64 @@
   75% {
     -webkit-transform: translate(0px, 7px);
             transform: translate(0px, 7px);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@-webkit-keyframes babul {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(14px, -5px);
+            transform: translate(14px, -5px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(8px, -40px);
+            transform: translate(8px, -40px);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translate(17px, -95px);
+            transform: translate(17px, -95px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(10px, -115px);
+            transform: translate(10px, -115px);
+  }
+}
+
+@keyframes babul {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translate(14px, -5px);
+            transform: translate(14px, -5px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(8px, -40px);
+            transform: translate(8px, -40px);
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translate(17px, -95px);
+            transform: translate(17px, -95px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(10px, -115px);
+            transform: translate(10px, -115px);
   }
 }
 
@@ -298,8 +354,23 @@ nav > ul > li > a:hover {
           animation: wave 4s infinite;
 }
 
+#skill .sk-content .cards .card .card-wave-1::after, #skill .sk-content .cards .card .card-wave-2::after, #skill .sk-content .cards .card .card-wave-3::after, #skill .sk-content .cards .card .card-wave-4::after, #skill .sk-content .cards .card .card-wave-5::after, #skill .sk-content .cards .card .card-wave-6::after, #skill .sk-content .cards .card .card-wave-7::after, #skill .sk-content .cards .card .card-wave-8::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  width: 4%;
+  height: 4%;
+  background-color: rgba(255, 255, 255, 0.781);
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+  -webkit-animation: babul 10s infinite;
+          animation: babul 10s infinite;
+}
+
 #skill .sk-content .cards .card .card-donuts .card-donuts-info {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.863);
   width: 67%;
   height: 130px;
   border-radius: 50%;
@@ -312,7 +383,7 @@ nav > ul > li > a:hover {
   display: block;
   width: 75px;
   position: absolute;
-  left: 22%;
+  left: 21.5%;
   top: 25%;
 }
 
@@ -324,7 +395,7 @@ nav > ul > li > a:hover {
   border-top: solid 0.8px black;
   margin-top: 50px;
   padding-top: 13px;
-  font-size: 2.2rem;
+  font-size: 2.35rem;
   text-shadow: 0.5px 0.5px 1px #121212;
   position: absolute;
   width: 100%;
@@ -337,9 +408,183 @@ nav > ul > li > a:hover {
   margin-top: 20px;
 }
 
+#gallery .sec-title {
+  top: 23%;
+}
+
 #gallery .gl-img {
-  background-image: url(../img/light-town.jpg);
+  background-image: url(../img/light-city.jpg);
+  background-position: 0 55%;
   position: relative;
+}
+
+#gallery .gl-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 11, 19, 0.212);
+}
+
+#gallery .gl-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#gallery .gl-content .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #ececec;
+  margin: 0 40px 80px 40px;
+  border-radius: 1%;
+  overflow: hidden;
+  color: black;
+  -webkit-filter: drop-shadow(1px 1px 7px #c4c2c2);
+          filter: drop-shadow(1px 1px 7px #c4c2c2);
+}
+
+#gallery .gl-content .work .work-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  height: 450px;
+}
+
+#gallery .gl-content .work .work-img:nth-child(1)::before {
+  content: "";
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #12121244;
+}
+
+#gallery .gl-content .work .work-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .gl-content .work .work-art {
+  margin: 15px 0 0 30px;
+  height: 130px;
+}
+
+#gallery .gl-content .work .work-art h2 {
+  display: inline-block;
+  margin-bottom: 2px;
+  font-size: 1.6rem;
+}
+
+#gallery .gl-content .work .work-art p {
+  color: rgba(0, 0, 0, 0.705);
+  font-size: 1.2rem;
+}
+
+#gallery .gl-content .work .work-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#gallery .gl-content .work .work-buttons .work-learn {
+  text-align: left;
+  display: block;
+  width: 50%;
+  height: 60px;
+  font-size: 1.7rem;
+  padding: 5px 0 0 12px;
+  margin: 0 0 10px 10px;
+}
+
+#gallery .gl-content .work .work-buttons .work-learn button {
+  width: 50%;
+  border-radius: 10%;
+  background-color: #cccbcb;
+  -webkit-box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.568);
+          box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.568);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+#gallery .gl-content .work .work-buttons .work-learn button:hover {
+  background-color: #e2e0e0;
+}
+
+#gallery .gl-content .work .work-buttons .work-arrow {
+  text-align: right;
+  display: block;
+  width: 50%;
+  font-size: 1.8rem;
+  padding: 0 15px 0 0;
+}
+
+#gallery .gl-content .work .work-buttons .work-arrow .work-arrow-btn {
+  width: 15%;
+  height: 85%;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  padding-top: 5px;
+  margin: 0 5px 0 0;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+#gallery .gl-content .work .work-buttons .work-arrow .work-arrow-btn:hover {
+  background-color: #d1d1d1;
+}
+
+#gallery .gl-content .work .work-buttons .work-arrow .work-arrow-btn.work-rotate {
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
+}
+
+#gallery .gl-content .work .work-expand .work-none-display {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+#gallery .gl-content .work .work-expand .work-click {
+  -webkit-transition: height 0.5s,opacity 0.5s;
+  transition: height 0.5s,opacity 0.5s;
+  opacity: 1;
+  visibility: visible;
+  height: 130px;
+  width: 100%;
+  letter-spacing: 1.2px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#gallery .gl-content .work .work-expand .work-click h3 {
+  font-size: 1.5rem;
+}
+
+#gallery .gl-content .work .work-expand .work-click p {
+  font-size: 1.4rem;
 }
 
 /* アプリケーション */

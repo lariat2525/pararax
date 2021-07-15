@@ -1,166 +1,229 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットCSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>PararaX PortFolio</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2313c19cb5.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <nav>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#application">APP</a></li>
-            </ul>
-        </nav>
-        <h1 class="site-title">URASITE</h1>
+      <nav>
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#application">APP</a></li>
+        </ul>
+      </nav>
+      <h1 class="site-title">URASITE</h1>
     </header>
     <main>
-        <section id="profile"><!-- プロフィール部分 -->
-            <div class="pf-img fixed-bg">
-                <h2 class="sec-title">PROFILE</h2>
-              </div>
-            <div class="pf-content wrapper"><!-- こいつにフレックス -->
-                <div class="pf-item">
-                    <div class="figure">
-                        <img src="img/main-chara.jpg" alt="nightmare-chara">
-                    </div>
-                </div>
-                <div class="pf-item">
-                    <div class="pf-list">
-                        <dl>
-                            <dt>Name :</dt>
-                            <dd>Ura Yuto</dd>
-                            <dt>Birth :</dt>
-                            <dd>1996/07/04</dd>
-                            <dt>Address:</dt>
-                            <dd>CHIBA Prefecture</dd>
-                            <dt>E-mail :</dt>
-                            <dd>Uran252525@Gmail.com</dd>
-                        </dl>
-                    </div>
-                </div>
+      <section id="profile">
+        <!-- プロフィール部分 -->
+        <div class="pf-img fixed-bg">
+          <h2 class="sec-title">PROFILE</h2>
+        </div>
+        <div class="pf-content wrapper">
+          <!-- こいつにフレックス -->
+          <div class="pf-item">
+            <div class="figure">
+              <img src="img/main-chara.jpg" alt="nightmare-chara" />
             </div>
-        </section>
-        <section id="skill"><!-- スキル部分 -->
-            <div class="sk-img fixed-bg">
-                <h2 class="sec-title">SKILL</h2>
+          </div>
+          <div class="pf-item">
+            <div class="pf-list">
+              <dl>
+                <dt>Name :</dt>
+                <dd>Ura Yuto</dd>
+                <dt>Birth :</dt>
+                <dd>1996/07/04</dd>
+                <dt>Address:</dt>
+                <dd>CHIBA Prefecture</dd>
+                <dt>E-mail :</dt>
+                <dd>Uran252525@Gmail.com</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skill">
+        <!-- スキル部分 -->
+        <div class="sk-img fixed-bg">
+          <h2 class="sec-title">SKILL</h2>
+        </div>
+        <div class="sk-content wrapper">
+          <div class="cards">
+            <div class="card" data-total="0">
+              <span class="card-wave-1"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/html.png" alt="" />
+                </div>
               </div>
-              <div class="sk-content wrapper">
-                  <div class="cards">
-                    <div class="card" data-total="40">
-                        <span class="card-wave-1"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/html.png" alt="">
-                                </div>
-                            </div>
-                            <div class="card-art">
-                                <div class="card-title">HTML</div>
-                            </div>
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-2"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/css.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-art">
-                            <div class="card-title">CSS</div>
-                        </div>
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-3"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/javascript.png" alt="">
-                                </div>
-                            </div>
-                            <div class="card-art">
-                                <div class="card-title">JavaScript</div>
-                            </div>
-                            
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-4"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/php.png" alt="">
-                                </div>
-                            </div>
-                            <div class="card-art">
-                                <div class="card-title">PHP</div>
-                            </div>
-                            
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-5"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/wordpress.png" alt="">
-                                </div>
-                            </div>
-                            <div class="card-art">
-                                <div class="card-title">WordPress</div>
-                            </div>
-                            
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-6"></span>
-                            <div class="card-donuts">
-                                <div class="card-donuts-info"><img src="img/skill/github.png" alt="">
-                                </div>
-                            </div>
-                            <div class="card-art">
-                                <div class="card-title">Github</div>
-                            </div>
-                            
-                    </div>
-                    <div class="card" data-total="40">
-                        <span class="card-wave-7"></span>
-                        <div class="card-donuts">
-                            <div class="card-donuts-info"><img src="img/skill/photoshop.png" alt="">
-                            </div>
-                        </div>
-                        <div class="card-art">
-                            <div class="card-title">Photoshop</div>
-                        </div>
-                        
-                    </div>
-                    <div class="card" data-total="70">
-                        <span class="card-wave-8"></span>
-                        <div class="card-donuts">
-                            <div class="card-donuts-info"><img src="img/skill/excel.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="card-art">
-                            <div class="card-title">ExcelVBA</div>
-                        </div>
-                        
-                    </div>
-                  </div>
+              <div class="card-art">
+                <div class="card-title">HTML</div>
               </div>
-        </section>
-        <section id="gallery"><!-- ギャラリー部分 -->
-            <div class="gl-img fixed-bg">
-                <h2 class="sec-title">GALLERY</h2>
+            </div>
+            <div class="card" data-total="20">
+              <span class="card-wave-2"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/css.png" alt="" />
+                </div>
               </div>
-        </section>
-        <!-- <section id="application"> --><!-- API呼び出し部分 -->
-           <!--  <div class="app-img fixed-bg">
-                <h2 class="sec-title">APP</h2>
+              <div class="card-art">
+                <div class="card-title">CSS</div>
               </div>
-        </section> -->
+            </div>
+            <div class="card" data-total="90">
+              <span class="card-wave-3"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/javascript.png" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">JavaScript</div>
+              </div>
+            </div>
+            <div class="card" data-total="240">
+              <span class="card-wave-4"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/php.png" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">PHP</div>
+              </div>
+            </div>
+            <div class="card" data-total="170">
+              <span class="card-wave-5"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/wordpress.png" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">WordPress</div>
+              </div>
+            </div>
+            <div class="card" data-total="40">
+              <span class="card-wave-6"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/github.png" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">Github</div>
+              </div>
+            </div>
+            <div class="card" data-total="200">
+              <span class="card-wave-7"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/photoshop.png" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">Photoshop</div>
+              </div>
+            </div>
+            <div class="card" data-total="20">
+              <span class="card-wave-8"></span>
+              <div class="card-donuts">
+                <div class="card-donuts-info">
+                  <img src="img/skill/excel.jpg" alt="" />
+                </div>
+              </div>
+              <div class="card-art">
+                <div class="card-title">ExcelVBA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <!-- ギャラリー部分 -->
+        <div class="gl-img fixed-bg">
+          <h2 class="sec-title">GALLERY</h2>
+        </div>
+        <div class="gl-content wrapper">
+          <div class="work">
+            <div class="work-img">
+              <img src="img/light-empty.jpg" alt="" />
+            </div>
+            <div class="work-art">
+              <h2>ポートフォリオ サイト</h2>
+              <p>現在、作成中</p>
+            </div>
+            <div class="work-buttons">
+              <div class="work-learn">
+                <button>Learn More</button>
+              </div>
+              <div class="work-arrow">
+                <button class="work-arrow-btn">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="work-expand">
+              <div class="work-js work-none-display">
+                <h3>使用技術</h3>
+                <p>フロント : HTML/SCSS/JQUERY</p>
+                <p>本番環境 : GitHub.io</p>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-img">
+              <img src="img/light-empty.jpg" alt="" />
+            </div>
+            <div class="work-art">
+              <h2>現在準備中</h2>
+              <p>今つっくております</p>
+            </div>
+            <div class="work-buttons">
+              <div class="work-learn"><button>Learn More</button></div>
+              <div class="work-arrow">
+                <button class="work-arrow-btn">
+                  <i class="fas fa-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="work-expand">
+              <div class="work-js work-none-display">
+                <h3>使用技術</h3>
+                <p>フロント : HTML/SCSS/JQUERY</p>
+                <p>本番環境 : GitHub.io</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <p class="copyright">&copy;Ura Yuto PortoFolio</p>
+      <p class="copyright">&copy;Ura Yuto PortoFolio</p>
     </footer>
-    
-</body>
+  </body>
 </html>
