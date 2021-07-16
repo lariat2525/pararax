@@ -381,7 +381,7 @@ nav > ul > li > a:hover {
 
 #skill .sk-content .cards .card .card-donuts .card-donuts-info img {
   display: block;
-  width: 75px;
+  width: 60%;
   position: absolute;
   left: 21.5%;
   top: 25%;
@@ -510,7 +510,6 @@ nav > ul > li > a:hover {
   text-align: left;
   display: block;
   width: 50%;
-  height: 60px;
   font-size: 1.7rem;
   padding: 5px 0 0 12px;
   margin: 0 0 10px 10px;
@@ -568,8 +567,8 @@ nav > ul > li > a:hover {
 }
 
 #gallery .gl-content .work .work-expand .work-click {
-  -webkit-transition: height 0.5s,opacity 0.5s;
-  transition: height 0.5s,opacity 0.5s;
+  -webkit-transition: height 0.5s, opacity 0.5s;
+  transition: height 0.5s, opacity 0.5s;
   opacity: 1;
   visibility: visible;
   height: 130px;
@@ -599,16 +598,16 @@ nav > ul > li > a:hover {
 #footer p {
   text-align: center;
   padding: 30px 0;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 857px) {
   .site-title {
     top: 42%;
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .sec-title {
-    font-size: 2rem;
+    font-size: 3rem;
     top: 26%;
   }
   .item-title {
@@ -646,7 +645,7 @@ nav > ul > li > a:hover {
     margin-top: 15px;
   }
   #profile .pf-content .pf-item .figure {
-    width: 350px;
+    width: 300px;
     margin: 0 auto;
   }
   #profile .pf-content .pf-item dl {
@@ -654,27 +653,185 @@ nav > ul > li > a:hover {
   }
   #profile .pf-content .pf-item .pf-list {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   #profile .pf-content .pf-item .pf-list dt {
+    font-size: 1.3rem;
+  }
+  /* スキル部分 */
+  #skill .sk-content .cards .card {
+    width: 50%;
+    margin: 20px 20px;
+    height: 250px;
+  }
+  #skill .sk-content .cards .card .card-donuts .card-donuts-info {
+    margin-top: 5px;
+  }
+  #skill .sk-content .cards .card .card-donuts .card-donuts-info img {
+    left: 20.5%;
+  }
+  #skill .sk-content .cards .card .card-art .card-title {
+    font-size: 1.9rem;
+    padding-top: 8px;
+  }
+  /* ギャラリー画面 */
+  #gallery .gl-content .work {
+    width: 80%;
+  }
+  #gallery .gl-content .work .work-img {
+    height: 180px;
+  }
+  #gallery .gl-content .work .work-art {
+    margin-left: 10px;
+  }
+  #gallery .gl-content .work .work-art h2 {
+    font-size: 1.1rem;
+  }
+  #gallery .gl-content .work .work-art p {
+    font-size: 0.8rem;
+  }
+  #gallery .gl-content .work .work-buttons .work-learn {
+    padding-left: 0;
     font-size: 1rem;
+  }
+  #gallery .gl-content .work .work-buttons .work-learn button {
+    width: 90%;
+  }
+  #gallery .gl-content .work .work-buttons .work-arrow {
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+  #gallery .gl-content .work .work-buttons .work-arrow .work-arrow-btn {
+    margin-top: 3px;
+    width: 32px;
+    height: 32px;
+  }
+  #gallery .gl-content .work .work-expand .work-click {
+    height: 66px;
+    text-align: left;
+    padding-left: 6px;
+  }
+  #gallery .gl-content .work .work-expand .work-click h3 {
+    font-size: 0.7rem;
+  }
+  #gallery .gl-content .work .work-expand .work-click p {
+    font-size: 0.6rem;
   }
 }
 
 @media screen and (max-width: 360px) {
+  /* ALL */
+  .site-title {
+    top: 42%;
+    font-size: 3.5rem;
+  }
+  .sec-title {
+    font-size: 3rem;
+    top: 26%;
+  }
+  .item-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+  }
+  .fixed-bg {
+    height: 150px;
+    /* スマホ時は背景をスクロールするように変更 */
+    background-attachment: scroll;
+  }
+  .wrapper {
+    padding: 20px 10px 50px 10px;
+  }
+  #profile {
+    margin-top: 30px;
+  }
+  #profile .pf-content .pf-item {
+    margin: 0;
+    padding: 0 0;
+  }
   #profile .pf-content .pf-item .figure {
     width: 200px;
-    margin: 0 auto;
-  }
-  #profile .pf-content .pf-item dl {
-    margin: 0 auto;
   }
   #profile .pf-content .pf-item .pf-list {
-    text-align: center;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   #profile .pf-content .pf-item .pf-list dt {
-    font-size: 0.4rem;
+    font-size: 1rem;
+  }
+  /* スキル部分 */
+  #skill .sk-content .cards .card {
+    width: 100%;
+    margin: 15px 20px;
+    height: 180px;
+  }
+  #skill .sk-content .cards .card .card-wave-1, #skill .sk-content .cards .card .card-wave-2, #skill .sk-content .cards .card .card-wave-3, #skill .sk-content .cards .card .card-wave-4, #skill .sk-content .cards .card .card-wave-5, #skill .sk-content .cards .card .card-wave-6, #skill .sk-content .cards .card .card-wave-7, #skill .sk-content .cards .card .card-wave-8 {
+    height: 180px;
+  }
+  #skill .sk-content .cards .card .card-donuts .card-donuts-info {
+    height: 120px;
+    width: 64%;
+    margin-bottom: 10px;
+  }
+  #skill .sk-content .cards .card .card-donuts .card-donuts-info img {
+    top: 23%;
+    left: 25%;
+    width: 50%;
+  }
+  #skill .sk-content .cards .card .card-art .card-title {
+    font-size: 1.4rem;
+    padding-top: 5px;
+    margin-top: 0;
+  }
+  /* ギャラリー画面 */
+  #gallery .gl-content {
+    margin-top: 20px;
+  }
+  #gallery .gl-content .work {
+    width: 95%;
+    margin: 0 20px 50px 20px;
+  }
+  #gallery .gl-content .work .work-img {
+    height: 140px;
+  }
+  #gallery .gl-content .work .work-art {
+    margin-left: 10px;
+    height: 90px;
+  }
+  #gallery .gl-content .work .work-art h2 {
+    font-size: 0.9rem;
+  }
+  #gallery .gl-content .work .work-art p {
+    font-size: 0.7rem;
+  }
+  #gallery .gl-content .work .work-buttons .work-learn {
+    padding-left: 0;
+    font-size: 0.8rem;
+  }
+  #gallery .gl-content .work .work-buttons .work-learn button {
+    width: 90%;
+  }
+  #gallery .gl-content .work .work-buttons .work-arrow {
+    padding-right: 10px;
+    font-size: 0.6rem;
+    margin-top: 2.5px;
+  }
+  #gallery .gl-content .work .work-buttons .work-arrow .work-arrow-btn {
+    margin-top: 3px;
+    width: 22px;
+    height: 22px;
+  }
+  #gallery .gl-content .work .work-expand .work-click {
+    height: 66px;
+    text-align: left;
+    padding-left: 6px;
+  }
+  #gallery .gl-content .work .work-expand .work-click h3 {
+    font-size: 0.7rem;
+  }
+  #gallery .gl-content .work .work-expand .work-click p {
+    font-size: 0.6rem;
+  }
+  #footer p {
+    font-size: 0.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

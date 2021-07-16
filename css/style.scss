@@ -242,7 +242,7 @@ nav {
             z-index: 3;
             img {
               display: block;
-              width: 75px;
+              width: 60%;
               position: absolute;
               left: 21.5%;
               top: 25%;
@@ -342,7 +342,6 @@ nav {
           text-align: left;
           display: block;
           width: 50%;
-          height: 60px;
           font-size: 1.7rem;
           padding: 5px 0 0 12px;
           margin: 0 0 10px 10px;
@@ -382,17 +381,16 @@ nav {
         }
       }
       .work-expand {
-        
         .work-none-display {
-          visibility:hidden;
-          height:0;
-          opacity:0;
+          visibility: hidden;
+          height: 0;
+          opacity: 0;
         }
         .work-click {
-          transition:height 0.5s,opacity 0.5s;
-          opacity:1;
+          transition: height 0.5s, opacity 0.5s;
+          opacity: 1;
           visibility: visible;
-          height:130px;
+          height: 130px;
           width: 100%;
           letter-spacing: 1.2px;
           padding: 10px 0;
@@ -423,17 +421,17 @@ nav {
   p {
     text-align: center;
     padding: 30px 0;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
 // SP
 @media screen and (max-width: 857px) {
   .site-title {
     top: 42%;
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .sec-title {
-    font-size: 2rem;
+    font-size: 3rem;
     top: 26%;
   }
   .item-title {
@@ -466,7 +464,7 @@ nav {
           margin-top: 15px;
         }
         .figure {
-          width: 350px;
+          width: 300px;
           margin: 0 auto;
         }
         dl {
@@ -474,9 +472,86 @@ nav {
         }
         .pf-list {
           text-align: center;
-          font-size: 1.3rem;
+          font-size: 1.6rem;
           dt {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  /* スキル部分 */
+  #skill {
+    .sk-content {
+      .cards {
+        .card {
+          width: 50%;
+          margin: 20px 20px;
+          height: 250px;
+          .card-donuts {
+            .card-donuts-info {
+              margin-top: 5px;
+              img {
+                left: 20.5%;
+              }
+            }
+          }
+          .card-art {
+            .card-title {
+              font-size: 1.9rem;
+              padding-top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ギャラリー画面 */
+  #gallery {
+    .gl-content {
+      .work {
+        width: 80%;
+        .work-img {
+          height: 180px;
+        }
+        .work-art {
+          margin-left: 10px;
+          h2 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        .work-buttons {
+          .work-learn {
+            padding-left: 0;
             font-size: 1rem;
+            button {
+              width: 90%;
+            }
+          }
+          .work-arrow {
+            padding-right: 10px;
+            font-size: 1rem;
+            .work-arrow-btn {
+              margin-top: 3px;
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+        .work-expand {
+          .work-click {
+            height: 66px;
+            text-align: left;
+            padding-left: 6px;
+            h3 {
+              font-size: 0.7rem;
+            }
+            p {
+              font-size: 0.6rem;
+            }
           }
         }
       }
@@ -486,18 +561,138 @@ nav {
 
 // スマホ　iphone 4/5/6/se all
 @media screen and (max-width: 360px) {
-  #profile .pf-content .pf-item .figure {
-    width: 200px;
-    margin: 0 auto;
+  /* ALL */
+  .site-title {
+    top: 42%;
+    font-size: 3.5rem;
   }
-  #profile .pf-content .pf-item dl {
-    margin: 0 auto;
+  .sec-title {
+    font-size: 3rem;
+    top: 26%;
   }
-  #profile .pf-content .pf-item .pf-list {
-    text-align: center;
-    font-size: 0.8rem;
+  .item-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
   }
-  #profile .pf-content .pf-item .pf-list dt {
-    font-size: 0.4rem;
+  .fixed-bg {
+    height: 150px;
+    /* スマホ時は背景をスクロールするように変更 */
+    background-attachment: scroll;
+  }
+  .wrapper {
+    padding: 20px 10px 50px 10px;
+  }
+  #profile {
+    margin-top: 30px;
+    // position: relative;
+    .pf-content {
+      .pf-item {
+        margin: 0;
+        padding: 0 0;
+        .figure {
+          width: 200px;
+        }
+        .pf-list {
+          font-size: 1.2rem;
+          dt {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  /* スキル部分 */
+  #skill {
+    .sk-content {
+      .cards {
+        .card {
+          width: 100%;
+          margin: 15px 20px;
+          height: 180px;
+          .card-wave-1 {
+            height: 180px;
+          }
+          .card-donuts {
+            .card-donuts-info {
+              height: 120px;
+              width: 64%;
+              margin-bottom: 10px;
+              img {
+                top: 23%;
+                left: 25%;
+                width: 50%;
+              }
+            }
+          }
+          .card-art {
+            .card-title {
+              font-size: 1.4rem;
+              padding-top: 5px;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ギャラリー画面 */
+  #gallery {
+    .gl-content {
+      margin-top: 20px;
+      .work {
+        width: 95%;
+        margin: 0 20px 50px 20px;
+        .work-img {
+          height: 140px;
+        }
+        .work-art {
+          margin-left: 10px;
+          height: 90px;
+          h2 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.7rem;
+          }
+        }
+        .work-buttons {
+          .work-learn {
+            padding-left: 0;
+            font-size: 0.8rem;
+            button {
+              width: 90%;
+            }
+          }
+          .work-arrow {
+            padding-right: 10px;
+            font-size: 0.6rem;
+            margin-top: 2.5px;
+            .work-arrow-btn {
+              margin-top: 3px;
+              width: 22px;
+              height: 22px;
+            }
+          }
+        }
+        .work-expand {
+          .work-click {
+            height: 66px;
+            text-align: left;
+            padding-left: 6px;
+            h3 {
+              font-size: 0.7rem;
+            }
+            p {
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    p{
+      font-size:0.8rem;
+    }
   }
 }
