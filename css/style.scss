@@ -95,14 +95,14 @@ nav {
 
       > a {
         font-family: $fTeko;
-        font-size: 2.6rem;
+        font-size: 3rem;
         color: #fff;
         font-weight: bold;
         transition: all 0.3s ease;
         filter: drop-shadow(1px 1px 2px #121212);
 
         &:hover {
-          color: blue;
+          color: rgb(0, 153, 255);
         }
       }
     }
@@ -446,7 +446,23 @@ nav {
   .wrapper {
     padding: 30px 16px 60px 16px;
   }
+  nav {
+    > ul {
+      > li {
+        > a {
+          font-family: $fTeko;
+          font-size: 2rem;
+          color: #fff;
+          font-weight: bold;
+          }
+        }
+      }
+    }
 }
+// ナビ
+
+
+
 // profile
 @media screen and (max-width: 857px) {
   #profile {
@@ -582,6 +598,88 @@ nav {
   .wrapper {
     padding: 20px 10px 50px 10px;
   }
+  // ハンバーガーメニュ
+  #header {
+    nav {
+      position: relative;
+      opacity: 0;
+      left:-400px;
+      z-index: 30;
+      > ul {
+        display: block;
+        > li {
+          margin: 0 38%;
+          height: 36px;
+          > a {
+            font-family: $fTeko;
+            font-size: 1.7rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+    #mask {
+      display: none;
+      transition: all 0.5s;
+    }
+    &.open{ /* OPENクラスがついたら */
+      nav{
+      left: 0;
+      opacity: 1;
+      }
+      .toggle_btn{
+        span{
+          background-color: #fff;
+          &:nth-child(1) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+          &:nth-child(2) {
+            transform: translateY(0) rotate(45deg);
+          }
+        }
+        
+      }
+      #mask{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .8;
+        z-index: 10;
+        cursor: pointer;
+      }
+    }
+    .toggle_btn {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      left:97%;
+      bottom:110px;
+      transition: all 0.5s;
+      cursor: pointer;
+      z-index: 30;
+      margin: 0;
+      span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        border-radius: 6px;
+        transition: all 0.5s;
+        &:nth-child(1){
+          top: 18px;
+        }
+        &:nth-child(2){
+          bottom: 18px;
+        }
+      }
+    }
+  }
+
   #profile {
     margin-top: 30px;
     // position: relative;
@@ -690,9 +788,9 @@ nav {
       }
     }
   }
-  #footer{
-    p{
-      font-size:0.8rem;
+  #footer {
+    p {
+      font-size: 0.8rem;
     }
   }
 }

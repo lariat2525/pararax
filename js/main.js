@@ -1,4 +1,5 @@
 $(function () {
+  
   var waves = function () {/* スキルによって水の量が変わる処理 */
     for (let i = 0; i < 8; i++) {
       var totals = [];
@@ -12,7 +13,7 @@ $(function () {
 
         if(totals[i].total >= 170){/* data170以上の場合 */
         cardWaves[i] = $(`.card span`).eq(i).attr("class");
-        $("." + cardWaves[i]).css("top", "150px");}
+        $("." + cardWaves[i]).css("top", "143px");}
         else{/* data170以下の場合 */
           cardWaves[i] = $(`.card span`).eq(i).attr("class");
         $("." + cardWaves[i]).css("top", totals[i].total);}
@@ -25,6 +26,7 @@ $(function () {
     }
   }; 
   waves();　/* 実行 */
+  
 
 /* ギャラリー画面のカード開閉 */
   $(".work-arrow-btn").on("click", function () {
@@ -43,20 +45,25 @@ $(function () {
       rotateArrow.eq(indexBtn).addClass("work-rotate");
     }
   }); 
+
+  $(".toggle_btn").on("click", function () {
+
+    if($("#header").hasClass("open")){
+
+      $("#header").removeClass("open");
+
+    }else{
+
+      $("#header").addClass("open");
+    }
+    
+    $('#mask').on('click', function() {
+      // openクラスを削除して、メニューを閉じる
+      $('#header').removeClass('open');
+    });
+
+  });
+
+
 });
 
-// $('.work-arrow-btn1').on('click',function(){
-
-//   if($('.work-js').hasClass('work-none-display1')){
-//     $('.work-js').removeClass('work-none-display1');
-//     }else{
-//       $('.work-js').addClass('work-none-display1');
-//     }
-// });
-
-// $('.work-arrow-btn').on('click',function(){
-//   var noneDis = $('.work-js');
-//   var indexBtn = $('button.work-arrow-btn').index(this);
-//   // var indexArry = [noneDis,index];
-
-//   noneDis.eq(indexBtn).toggle('work-click');
