@@ -100,6 +100,7 @@ nav {
         font-weight: bold;
         transition: all 0.3s ease;
         filter: drop-shadow(1px 1px 2px #121212);
+        
 
         &:hover {
           color: rgb(0, 153, 255);
@@ -576,7 +577,7 @@ nav {
 }
 
 // スマホ　iphone 4/5/6/se all
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   /* ALL */
   .site-title {
     top: 42%;
@@ -621,6 +622,7 @@ nav {
     #mask {
       display: none;
       transition: all 0.5s;
+      
     }
     &.open{ /* OPENクラスがついたら */
       nav{

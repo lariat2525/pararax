@@ -61,9 +61,19 @@ $(function () {
       // openクラスを削除して、メニューを閉じる
       $('#header').removeClass('open');
     });
-
+    
+  
   });
 
+  $('a[href^="#"]').on("click",function(){/* スムーズスクロール */
+
+    let href= $(this).attr("href");
+    let target = $(href == "#" || href == "" ? 'html' : href);
+    let position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, 600, "swing");
+
+    $('#header').removeClass('open');/* ハンバーメニューでスクロールした際のマスクが残ってしまうのをここで解決 */
+  });
 
 });
 

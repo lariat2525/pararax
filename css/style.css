@@ -725,7 +725,7 @@ nav > ul > li > a:hover {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
   /* ALL */
   .site-title {
     top: 42%;
